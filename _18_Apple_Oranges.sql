@@ -40,7 +40,7 @@ join
     select sale_date, sum(sold_num) as orange from sales where  fruit = 'oranges'
     group by sale_date
 ) orange_table
-on apple_table.sale_date = orange_table.sale_date;\
+on apple_table.sale_date = orange_table.sale_date;
 
 
 -- Solution:
